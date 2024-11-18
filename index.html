@@ -4,27 +4,109 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sumie Therapy World - Empowering kids through therapy and play. Shop puzzles, toys, and more for children with autism.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sumie Therapy World</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body style="padding-top: 70px">
+	
+	
     <!-- Header Section -->
-    <header class="site-header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Sumie Therapy World Logo">
+    <header>
+        <!-- Top Bar Section -->
+        <div class="top-bar bg-light py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/images/logo.png" alt="Sumie Therapy World Logo" style="height: 50px;">
+                </a>
+    
+                <!-- Search Bar -->
+                <form class="form-inline">
+                    <input
+                        class="form-control mr-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                        style="width: 300px;"
+                    />
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+    
+                <!-- Contact Info and Cart -->
+                <div class="d-flex align-items-center">
+                    <!-- Contact Info -->
+                    <div class="contact-info mr-3">
+                        <p class="mb-0 text-primary"><strong>Ph:</strong> 03 9380 1127</p>
+                    </div>
+    
+                    <!-- My Account and Cart -->
+                    <div class="account-cart d-flex align-items-center">
+                        <a href="#" class="text-primary mr-3">
+                            <i class="fas fa-user"></i> My Account
+                        </a>
+                        <a href="cart.html" class="text-primary">
+                            <i class="fas fa-shopping-cart"></i> My Cart
+                        </a>
+                    </div>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="cart-icon">
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <!-- Links -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Shop by Category
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="categories/puzzles.html">Puzzles</a>
+                                <a class="dropdown-item" href="categories/blocks.html">Blocks</a>
+                                <a class="dropdown-item" href="categories/charts.html">Charts</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="categories/toys.html">Toys</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+    
 
     <!-- Hero Banner Section -->
     <section class="hero">
@@ -33,9 +115,42 @@
             <p>Empowering kids through therapy and play. Explore our wide range of toys, puzzles, and learning tools designed for kids with autism.</p>
             <a href="shop.html" class="btn">Shop Now</a>
         </div>
-    </section>
+		
+		
+		
+		
+	  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+  </ol>
+	  <div class="carousel-inner" role="listbox">
+	    <div class="carousel-item active"> <img class="d-block mx-auto" src="images/Carousel_Placeholder.png" alt="First slide">
+	      <div class="carousel-caption">
+	        <h5>First slide Heading</h5>
+	        <p>First slide Caption</p>
+          </div>
+        </div>
+	    <div class="carousel-item"> <img class="d-block mx-auto" src="images/Carousel_Placeholder.png" alt="Second slide">
+	      <div class="carousel-caption">
+	        <h5>Second slide Heading</h5>
+	        <p>Second slide Caption</p>
+          </div>
+        </div>
+	    <div class="carousel-item"> <img class="d-block mx-auto" src="images/Carousel_Placeholder.png" alt="Third slide">
+	      <div class="carousel-caption">
+	        <h5>Third slide Heading</h5>
+	        <p>Third slide Caption</p>
+          </div>
+        </div>
+  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+</section>
+	
 
-    <!-- Featured Categories Section -->
+
+<!-- Featured Categories Section -->
     <section class="featured-categories">
         <h2>Shop by Categories</h2>
         <div class="categories-container">
@@ -93,5 +208,8 @@
             </div>
         </div>
     </footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
 </body>
 </html>

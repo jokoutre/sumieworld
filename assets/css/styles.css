@@ -27,26 +27,115 @@ a:hover {
     opacity: 0.8;
 }
 
-/* Header Styles */
-.site-header {
-    background: linear-gradient(45deg, #4facfe, #00f2fe);
-    padding: 10px 20px;
+/* Navbar Customization */
+/* Top Bar */
+.top-bar {
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar .form-control {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.top-bar .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.top-bar .contact-info {
+    font-size: 14px;
+    color: #007bff;
+}
+
+.account-cart a {
+    font-size: 14px;
+    color: #007bff;
+}
+
+.account-cart a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar {
-    position: fixed; /* Fixes the navbar to the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ensures it stretches across the screen */
-    background: linear-gradient(45deg, #4facfe, #00f2fe); /* Keeps the gradient */
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures the navbar stays above other content */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: bold;
 }
+
+.navbar .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #007bff;
+    border: none;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #1189F2 !important; /* Custom background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.navbar-brand img {
+    height: 50px; /* Set logo height */
+}
+
+.navbar .nav-link {
+    color: #fff !important; /* Change link text color */
+    font-weight: bold; /* Make text bold */
+}
+
+.navbar .nav-link:hover {
+    color: #FFF000 !important; /* Change hover color */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Dropdown Menu Customization */
+.dropdown-menu {
+    background-color: #4facfe !important; /* Set dropdown background color */
+    border: none; /* Remove border */
+}
+
+.dropdown-item {
+    color: #fff !important; /* Change dropdown item text color */
+}
+
+.dropdown-item:hover {
+    background-color: #FFF000 !important; /* Change hover background color */
+    color: #fff !important; /* Keep text white */
+}
+
+/* Search Bar Customization */
+.form-control {
+    border-radius: 20px; /* Rounded corners for search bar */
+    border: 2px solid #4facfe; /* Custom border color */
+}
+
+.btn-outline-success {
+    color: #4facfe; /* Change text color */
+    border-color: #4facfe; /* Change border color */
+}
+
+.btn-outline-success:hover {
+    background-color: #4facfe !important; /* Change background on hover */
+    color: #fff !important; /* Make text white */
+}
+
 
 
 .logo img {
@@ -251,4 +340,13 @@ a:hover {
 
 .social-icons a:hover {
     color: #4facfe;
+}
+.shop h1 {
+    text-align: center;
+}
+.shop .category h2 {
+    text-align: center;
+}
+.category .subcategory h3 {
+    text-align: center;
 }
