@@ -1,4 +1,3 @@
-/* CSS Document */
 /* General Styles */
 * {
     margin: 0;
@@ -27,68 +26,124 @@ a:hover {
     opacity: 0.8;
 }
 
-/* Navbar Customization */
-/* Top Bar */
-.top-bar {
+/* Header Section */
+header {
+    width: 100%;
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
-.top-bar .form-control {
-    border-radius: 20px;
+/* Logo Styling */
+header .logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Top Bar Section */
+header .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+header .top-bar .form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+header .top-bar .form-inline input[type="search"] {
+    flex: 1;
+    padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    outline: none;
 }
 
-.top-bar .btn-primary {
+header .top-bar .form-inline button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
     background-color: #007bff;
-    border-color: #007bff;
+    color: #fff;
+    cursor: pointer;
 }
 
-.top-bar .contact-info {
+header .top-bar .form-inline button:hover {
+    background-color: #0056b3;
+}
+
+/* Account and Cart Section */
+header .account-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+header .account-cart a {
     font-size: 14px;
     color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.account-cart a {
-    font-size: 14px;
-    color: #007bff;
+header .account-cart a:hover {
+    text-decoration: underline;
 }
 
-.account-cart a:hover {
+/* Navigation Bar */
+header .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3795FA;
+    padding: 10px 0;
+    width: 100%;
+}
+
+header .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar li {
+    margin: 10px 15px;
+}
+
+header .navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .navbar a:hover {
+    color: #FFD324;
     text-decoration: underline;
 }
 
 /* Navbar */
 .navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .nav-link {
-    color: #fff !important;
-    font-weight: bold;
-}
-
-.navbar .nav-link:hover {
-    color: #ffcc00 !important;
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-    background-color: #007bff;
-    border: none;
-}
-
-.dropdown-item {
-    color: #fff;
-}
-
-.dropdown-item:hover {
-    background-color: #0056b3;
-    color: #fff;
-}
-
-.navbar {
-    background-color: #1189F2 !important; /* Custom background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    background-color: #1189F2; /* Navbar background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 .navbar-brand img {
@@ -96,71 +151,35 @@ a:hover {
 }
 
 .navbar .nav-link {
-    color: #fff !important; /* Change link text color */
+    color: #fff !important; /* Navbar link text color */
     font-weight: bold; /* Make text bold */
 }
 
 .navbar .nav-link:hover {
-    color: #FFF000 !important; /* Change hover color */
+    color: #FFF000 !important; /* Yellow hover color */
     text-decoration: underline; /* Add underline on hover */
 }
 
-/* Dropdown Menu Customization */
-.dropdown-menu {
-    background-color: #4facfe !important; /* Set dropdown background color */
+/* Dropdown Menu */
+.navbar .dropdown-menu {
+    background-color: #1189F2; /* Match navbar background */
     border: none; /* Remove border */
+    border-radius: 0; /* Sharp edges */
+    padding: 10px 0; /* Add padding inside the dropdown */
 }
 
-.dropdown-item {
-    color: #fff !important; /* Change dropdown item text color */
+.navbar .dropdown-item {
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Add space around dropdown items */
 }
 
-.dropdown-item:hover {
-    background-color: #FFF000 !important; /* Change hover background color */
-    color: #fff !important; /* Keep text white */
-}
-
-/* Search Bar Customization */
-.form-control {
-    border-radius: 20px; /* Rounded corners for search bar */
-    border: 2px solid #4facfe; /* Custom border color */
-}
-
-.btn-outline-success {
-    color: #4facfe; /* Change text color */
-    border-color: #4facfe; /* Change border color */
-}
-
-.btn-outline-success:hover {
-    background-color: #4facfe !important; /* Change background on hover */
-    color: #fff !important; /* Make text white */
+.navbar .dropdown-item:hover {
+    background-color: #0056b3; /* Darker blue hover effect */
+    color: #fff; /* Keep text white */
 }
 
 
 
-.logo img {
-    max-height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.nav-links li {
-    margin: 0 10px;
-}
-
-.nav-links a {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.cart-icon i {
-    font-size: 20px;
-    color: #fff;
-}
 
 /* Hero Section */
 .hero {
@@ -198,7 +217,7 @@ a:hover {
     background: #ff4500;
 }
 
-/* Categories Section */
+/* Featured Categories Section */
 .featured-categories {
     padding: 40px 20px;
     text-align: center;
@@ -252,7 +271,7 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Products Section */
+/* Featured Products Section */
 .featured-products {
     padding: 40px 20px;
     background: #f0f8ff;
@@ -341,57 +360,57 @@ a:hover {
 .social-icons a:hover {
     color: #4facfe;
 }
-.shop h1 {
-    text-align: center;
-}
-.shop .category h2 {
-    text-align: center;
-}
-.category .subcategory h3 {
-    text-align: center;
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    /* Desktop Layout */
+    header .top-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    header .top-bar .logo {
+        flex: 1;
+        text-align: left;
+    }
+
+    header .top-bar .form-inline {
+        flex: 2;
+        max-width: 400px;
+        margin-bottom: 0;
+    }
+
+    header .account-cart {
+        flex: 1;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    header .navbar ul {
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+    header .navbar li {
+        margin: 0 15px;
+    }
 }
 
-
-/* Small Screens (Mobile) */
-@media (max-width: 767px) {
-    /* Stack Logo, Search Bar, and Navbar Vertically */
-    .top-bar {
+@media (max-width: 768px) {
+    /* Mobile Layout */
+    header .top-bar {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
-    /* Logo */
-    .top-bar .navbar-brand {
-        margin-bottom: 10px;
-    }
-
-    /* Search Bar */
-    .top-bar .form-inline {
-        width: 100%;
-        margin: 10px 0;
-        display: flex;
+    header .navbar ul {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    /* Navbar Section */
-    .navbar {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .navbar .navbar-toggler {
-        align-self: center;
-    }
-
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar-nav .nav-item {
-        text-align: center;
-        margin: 5px 0;
+    header .navbar li {
+        margin: 10px 10px;
     }
 }

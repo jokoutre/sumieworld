@@ -14,112 +14,100 @@
 <body style="padding-top: 70px">
 	
 	
-    <!-- Header Section -->
-    <header>
-        <!-- Top Bar Section -->
-        <div class="top-bar bg-light py-2">
-            <div class="container d-flex justify-content-between align-items-center">
-                <!-- Logo -->
-                <a href="index.html" class="navbar-brand">
-                    <img src="assets/images/logo.png" alt="Sumie Therapy World Logo" style="height: 50px;">
-                </a>
-    
-                <!-- Search Bar -->
-                <form class="form-inline">
-                    <input
-                        class="form-control mr-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                        style="width: 300px;"
-                    />
-                    <button class="btn btn-primary" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-    
-                <!-- Contact Info and Cart -->
-                <div class="d-flex align-items-center">
-                    <!-- Contact Info -->
-                    <div class="contact-info mr-3">
-                        <p class="mb-0 text-primary"><strong>Ph:</strong> 03 9380 1127</p>
-                    </div>
-    
-                    <!-- My Account and Cart -->
-                    <div class="account-cart d-flex align-items-center">
-                        <a href="#" class="text-primary mr-3">
-                            <i class="fas fa-user"></i> My Account
-                        </a>
-                        <a href="cart.html" class="text-primary">
-                            <i class="fas fa-shopping-cart"></i> My Cart
-                        </a>
-                    </div>
-                </div>
-            </div>
+<!-- Header Section -->
+<header>
+    <div class="top-bar">
+        <!-- Logo -->
+        <div class="logo text-center">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="The Therapy Store Logo" class="logo-img">
+            </a>
         </div>
-    
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mr-auto">
-                        <!-- Links -->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="navbarDropdown"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                Shop by Category
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="categories/puzzles.html">Puzzles</a>
-                                <a class="dropdown-item" href="categories/blocks.html">Blocks</a>
-                                <a class="dropdown-item" href="categories/charts.html">Charts</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="categories/toys.html">Toys</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
 
-    <!-- Hero Banner Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Sumie Therapy World</h1>
-            <p>Empowering kids through therapy and play. Explore our wide range of toys, puzzles, and learning tools designed for kids with autism.</p>
-            <a href="shop.html" class="btn">Shop Now</a>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <form class="form-inline">
+                <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Search..."
+                    aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
         </div>
-		
-		
-		
-		
-	  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+
+        <!-- Contact and Cart -->
+        <div class="account-cart">
+            <a href="#" class="account-link">
+                <i class="fas fa-user"></i> My Account
+            </a>
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i> My Cart
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Shop by Category
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Toys</a>
+                            <a class="dropdown-item" href="#">Puzzles</a>
+                            <a class="dropdown-item" href="#">Charts</a>
+                        </div>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="school-orders.html">School Orders</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="faqs.html">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
 	  <ol class="carousel-indicators">
 	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
 	    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
@@ -146,7 +134,8 @@
         </div>
   </div>
 	  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-</section>
+
+    
 	
 
 
@@ -196,6 +185,19 @@
             </div>
         </div>
     </section>
+
+		
+		
+		
+		
+	  
+		
+		
+		
+		
+		
+		
+
 
     <!-- Footer Section -->
     <footer class="site-footer">
