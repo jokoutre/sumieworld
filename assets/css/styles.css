@@ -350,3 +350,48 @@ a:hover {
 .category .subcategory h3 {
     text-align: center;
 }
+
+
+/* Small Screens (Mobile) */
+@media (max-width: 767px) {
+    /* Stack Logo, Search Bar, and Navbar Vertically */
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Logo */
+    .top-bar .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    /* Search Bar */
+    .top-bar .form-inline {
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Navbar Section */
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar .navbar-toggler {
+        align-self: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
