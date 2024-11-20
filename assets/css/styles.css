@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Merriweather', serif; /* Serif for body text */
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
@@ -14,6 +14,7 @@ body {
 }
 
 h1, h2, h3 {
+    font-family: 'Nunito', sans-serif; /* Sans-serif for headings */
     color: #444;
 }
 
@@ -143,7 +144,10 @@ header .navbar a:hover {
 /* Navbar */
 .navbar {
     background-color: #1189F2; /* Navbar background color */
+    font-family: 'Nunito', sans-serif; /* Apply modern sans-serif font */
+    font-weight: 600; /* Slightly bold for visibility */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    font-size: 16px; /* Standard size for readability */
 }
 
 .navbar-brand img {
@@ -151,36 +155,41 @@ header .navbar a:hover {
 }
 
 .navbar .nav-link {
-    color: #fff !important; /* Navbar link text color */
-    font-weight: bold; /* Make text bold */
+    color: #fff; /* White for contrast on a blue background */
+    padding: 10px 15px; /* Spacing for better clickability */
+    text-transform: uppercase; /* Optional for a modern look */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth hover effects */
 }
 
 .navbar .nav-link:hover {
-    color: #FFF000 !important; /* Yellow hover color */
-    text-decoration: underline; /* Add underline on hover */
+    color: #FFD700; /* Gold hover color for emphasis */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 /* Dropdown Menu */
 .navbar .dropdown-menu {
-    background-color: #1189F2; /* Match navbar background */
-    border: none; /* Remove border */
-    border-radius: 0; /* Sharp edges */
+    background-color: #0056b3; /* Slightly darker than the navbar */
+    font-family: 'Nunito', sans-serif; /* Match the navbar font */
+    border: none; /* Sharp edges */
     padding: 10px 0; /* Add padding inside the dropdown */
+    border-radius: 3px;
 }
 
 .navbar .dropdown-item {
     color: #fff; /* White text */
     padding: 10px 20px; /* Add space around dropdown items */
+    font-size: 15px; /* Slightly smaller than main links */
 }
 
 .navbar .dropdown-item:hover {
-    background-color: #0056b3; /* Darker blue hover effect */
-    color: #fff; /* Keep text white */
+    background-color: #004080; /* Dark blue hover */
+    color: #FFD700; /* Match hover color */
 }
 .navbar-toggler {
     border: none; /* Removes the border around the button */
     background-color: transparent; /* Ensures no background color blocks the icon */
     padding: 8px 10px;
+    font-family: 'Nunito', sans-serif; /* Consistent font */
 }
 
 .navbar-toggler-icon {
@@ -309,12 +318,33 @@ header .navbar a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: center;
+    margin-bottom: 20px;
+}
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+}
+
+.product-sort select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .product-card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
 .product-card h3 {
@@ -340,6 +370,37 @@ header .navbar a:hover {
 .product-card:hover {
     transform: scale(1.05);
 }
+
+
+/* About Section Styling */
+.about-section {
+    padding: 40px 20px;
+    background: #f0f8ff; /* Matches Featured Products background */
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444; /* Consistent with other headings */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
 
 /* Footer Section */
 .site-footer {
@@ -370,6 +431,23 @@ header .navbar a:hover {
 .social-icons a:hover {
     color: #4facfe;
 }
+.row .col-xl-12 h2 {
+    text-align: center;
+
+}
+.row .col-xl-12 p {
+    text-align: center;
+}
+ul li a {
+    color: #A6A6A6;
+}
+.col-md-3 .filter-section h4 {
+}
+
+
+
+
+
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
@@ -386,11 +464,19 @@ header .navbar a:hover {
         text-align: left;
     }
 
+
     header .top-bar .form-inline {
         flex: 2;
         max-width: 400px;
         margin-bottom: 0;
     }
+.world-summie-container {
+    margin-left: 150px;
+    margin-right: 150px;
+
+
+}
+
 
     header .account-cart {
         flex: 1;
