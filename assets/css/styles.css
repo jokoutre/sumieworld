@@ -177,7 +177,17 @@ header .navbar a:hover {
     background-color: #0056b3; /* Darker blue hover effect */
     color: #fff; /* Keep text white */
 }
+.navbar-toggler {
+    border: none; /* Removes the border around the button */
+    background-color: transparent; /* Ensures no background color blocks the icon */
+    padding: 8px 10px;
+}
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 25px;
+    height: 25px;
+}
 
 
 
