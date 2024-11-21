@@ -443,6 +443,22 @@ ul li a {
 }
 .col-md-3 .filter-section h4 {
 }
+.col-md-3 .filter-section h4 {
+    background-color: #FF3605;
+    color: #FFFFFF;
+    font-size: 14pt;
+    font-family: 'Nunito', sans-serif;
+}
+.filter-section .filter-group h5 {
+    font-size: 14pt;
+    font-family: Gotham, 'Nunito', sans-serif;
+}
+.col-md-4 .product-card .btn.btn-primary {
+    background-color: #FF3605;
+}
+
+
+
 
 
 
@@ -509,4 +525,81 @@ ul li a {
     header .navbar li {
         margin: 10px 10px;
     }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.container .row .col-md-3 {
+    visibility: hidden;
+}
+
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+}
+
+/* iPad 3 (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio : 2),
+only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (min-resolution: 192dpi) { 
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	
+}
+
+/* Retina displays ----------- */
+@media  only screen 
+and (-webkit-min-device-pixel-ratio : 2), 
+only screen 
+and (min-resolution: 192dpi) {
+
 }
