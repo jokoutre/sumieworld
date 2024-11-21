@@ -540,6 +540,11 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
+.container .row .col-md-3 {
+    visibility: hidden;
+    margin-top: -387px;
+}
+
 
 }
 
