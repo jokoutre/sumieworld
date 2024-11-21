@@ -453,11 +453,6 @@ ul li a {
     font-size: 14pt;
     font-family: Gotham, 'Nunito', sans-serif;
 }
-.col-md-4 .product-card .btn.btn-primary {
-    background-color: #FF3605;
-    color: #FFFFFF;
-    font-family: 'Nunito', sans-serif;
-}
 
 
 
@@ -546,6 +541,15 @@ and (min-width : 321px) {
     visibility: hidden;
     margin-top: -387px;
 }
+
+
+  .product-card {
+        margin: 0 auto; /* Centers horizontally */
+        display: flex;
+        flex-direction: column; /* Aligns content inside the card vertically */
+        align-items: center; /* Centers content horizontally inside the card */
+    }
+
 
 
 }
