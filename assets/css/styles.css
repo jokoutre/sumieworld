@@ -453,6 +453,12 @@ ul li a {
     font-size: 14pt;
     font-family: Gotham, 'Nunito', sans-serif;
 }
+.col-md-4 .product-card .btn.btn-primary {
+    background-color: #FF5C26;
+    font-family: Gotham, 'Nunito', sans-serif;
+    font-size: 9pt;
+}
+
 
 
 
