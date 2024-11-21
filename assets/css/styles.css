@@ -455,6 +455,8 @@ ul li a {
 }
 .col-md-4 .product-card .btn.btn-primary {
     background-color: #FF3605;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
 }
 
 
